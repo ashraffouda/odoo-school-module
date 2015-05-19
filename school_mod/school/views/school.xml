@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+     <data>
+          <record model="ir.actions.act_window" id="list_courses_action">
+               <field name="name">Courses</field>
+               <field name="res_model">school.course</field>
+               <field name="view_mode">tree,form</field>
+               <field name="help" type="html">
+                <p class="oe_view_nocontent_create">Create the first course
+                </p>
+            </field>
+          </record>
+          
+          <record model="ir.actions.act_window" id="list_students_action">
+               <field name="name">Students</field>
+               <field name="res_model">school.student</field>
+               <field name="view_mode">tree,form</field>
+               <field name="help" type="html">
+                <p class="oe_view_nocontent_create">Create the first student
+                </p>
+            </field>
+          </record>
+          
+          <record model="ir.actions.act_window" id="list_classes_action">
+               <field name="name">Classes</field>
+               <field name="res_model">school.class</field>
+               <field name="view_mode">tree,form</field>
+               <field name="help" type="html">
+                <p class="oe_view_nocontent_create">Create the first class
+                </p>
+            </field>
+          </record>
+          <menuitem id="main_school_menu" name="School" />
+          <menuitem id="school_menu" name="School"
+                  parent="main_school_menu"/>
+          <menuitem id="classes_menu" parent="school_menu" name="Classes" sequence="10" action="list_classes_action" />
+          <menuitem id="courses_menu" parent="school_menu" name="Courses" sequence="10" action="list_courses_action" />
+          <menuitem id="students_menu" parent="school_menu" name="Students" sequence="10" action="list_students_action" />
+      </data>
+</openerp>
