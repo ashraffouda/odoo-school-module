@@ -1,0 +1,25 @@
+<openerp>
+    <data>
+        
+           <record id="course0" model="school.course">
+             <field name="name">Course 0</field> 
+           </record> 
+        
+           <record id="course1" model="school.course">
+            <field name="name">Course1</field> 
+        </record> 
+        <!--  -->
+        <!--   <record id="object2" model="school.school"> -->
+        <!--     <field name="name">Object 2</field> -->
+        <!--   </record> -->
+        <!--  -->
+        <!--   <record id="object3" model="school.school"> -->
+        <!--     <field name="name">Object 3</field> -->
+        <!--   </record> -->
+        <!--  -->
+        <!--   <record id="object4" model="school.school"> -->
+        <!--     <field name="name">Object 4</field> -->
+        <!--   </record> -->
+        <!--  -->
+    </data>
+</openerp>
